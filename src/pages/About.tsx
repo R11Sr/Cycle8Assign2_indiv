@@ -9,8 +9,9 @@ const About: React.FC = () => {
         <IonToolbar>
           <IonTitle>About</IonTitle>
           <IonButtons slot='end'>
-            <IonButton routerLink='/About'>About</IonButton>
-            <IonButton  routerLink='/Products'>Products</IonButton>                
+            <IonButton  routerLink='/Products'>Products</IonButton>   
+            <IonButton  routerLink='/home'>Home</IonButton>                
+
           </IonButtons>
         </IonToolbar>
       </IonHeader>

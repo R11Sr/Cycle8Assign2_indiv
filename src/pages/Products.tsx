@@ -9,8 +9,8 @@ const Products: React.FC = () => {
         <IonToolbar>
           <IonTitle>Products</IonTitle>
           <IonButtons slot='end'>
-            <IonButton routerLink='/About'>About</IonButton>
-            <IonButton  routerLink='/Products'>Products</IonButton>                
+            <IonButton routerLink='/About'>About</IonButton>                     
+            <IonButton  routerLink='/home'>Home</IonButton>                
           </IonButtons>
         </IonToolbar>
       </IonHeader>
