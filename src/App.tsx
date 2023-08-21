@@ -29,38 +29,27 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/about" component={ExploreContainer}>
-          <About/>
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-    
+  
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
           <Home/>
         </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/">
-          <Home/>
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-
-    
-    <IonReactRouter>
-      <IonRouterOutlet>
         <Route exact path="/products">
           <Products/>
         </Route>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route exact path="/about" component={ExploreContainer}>
+          <About/>
+        </Route>
       </IonRouterOutlet>
     </IonReactRouter>
+
+
+
+
   </IonApp>
 );
 

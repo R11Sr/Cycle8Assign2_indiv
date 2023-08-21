@@ -7,11 +7,10 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home!  </IonTitle>
+          <IonTitle>Home!</IonTitle>
           <IonButtons slot='end'>
             <IonButton routerLink='/About'>About</IonButton>
-            <IonButton  routerLink='/Products'>Products</IonButton>
-                
+            <IonButton  routerLink='/Products'>Products</IonButton>                
           </IonButtons>
         </IonToolbar>
       </IonHeader>

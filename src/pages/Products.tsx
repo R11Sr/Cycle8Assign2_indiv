@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonImg } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonButtons, IonCardTitle, IonCardContent, IonImg,IonButton } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Products.css';
 
@@ -8,6 +8,10 @@ const Products: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Products</IonTitle>
+          <IonButtons slot='end'>
+            <IonButton routerLink='/About'>About</IonButton>
+            <IonButton  routerLink='/Products'>Products</IonButton>                
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

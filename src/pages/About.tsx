@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonList, IonItem, IonLabel } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButtons, IonButton } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './About.css';
 
@@ -8,6 +8,10 @@ const About: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>About</IonTitle>
+          <IonButtons slot='end'>
+            <IonButton routerLink='/About'>About</IonButton>
+            <IonButton  routerLink='/Products'>Products</IonButton>                
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
